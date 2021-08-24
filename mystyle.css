@@ -5,6 +5,11 @@ body {
 h1 {
     color: white;
     font-size: 50px;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
 }
 
 section.page-header {
@@ -20,4 +25,11 @@ section.page-body {
 
 section.indiv-project {
     margin:50px 50px
+}
+
+img.breeze-pics {
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
