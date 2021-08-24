@@ -1,4 +1,19 @@
 body {
-    margin: 50px 200px;
     background-color: #fbfbf8;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+section.page-header {
+    background-image: url('BackgroundImage.png');
+    background-size: cover;
+    height: 200px;
+    padding-top: 65px;
+}
+
+section.page-body {
+    margin: 50px 300px;
 }
