@@ -8,7 +8,7 @@ h1 {
 }
 
 section.page-header {
-    background-image: url('BackgroundImage.png');
+    background-image: url('Images/BackgroundImage.png');
     background-size: cover;
     height: 200px;
     padding-top: 65px;
@@ -16,4 +16,8 @@ section.page-header {
 
 section.page-body {
     margin: 50px 300px;
+}
+
+section.indiv-project {
+    margin:50px 50px
 }
