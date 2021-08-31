@@ -12,24 +12,82 @@ h4 {
     text-align: center;
 }
 
-section.page-header {
-    background-image: url('Images/BackgroundImage.png');
+.page-header {
+    background-image: url("Images/BackgroundImage.png");
     background-size: cover;
     height: 200px;
     padding-top: 65px;
 }
 
-section.page-body {
+.page-body {
     margin: 50px 300px;
 }
 
-section.indiv-project {
-    margin:50px 50px
+.indiv-project {
+    margin:50px 50px;
 }
 
-img.breeze-pics {
-    height: 600px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.breeze-pics {
+    width: 100%;
+}
+
+.slideshow-group {
+    max-width: 275px;
+    position: relative;
+    margin: auto;
+}
+
+.slide-image {
+    display: none;
+}
+
+.detailed-caption {
+    display: none;
+}
+
+.next, .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    margin-left: -75px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: -75px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.caption-text {
+    max-width: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
 }

@@ -3,10 +3,11 @@
 
   <head>
     <link rel="stylesheet" href="mystyle.css">
+    <script type = "text/javascript" src = "mainscript.js" ></script>
     <title>Andy Weaver's Portfolio</title>
   </head>
 
-  <body>
+  <body onload="showSlide(1)">
 
     <section class="page-header">
       <h1>Andy Weaver's Portfolio</h1>
@@ -23,28 +24,76 @@
       <hr>
 
       <section class="indiv-project">
+
         <h3>Breeze IOS App (in progress):</h3>
         <p>My roommate and I came up with the idea for Breeze when talking with our friends about their difficulties finding off-campus housing. We realized that there is no single platform to facilitate college students finding both housing and other college students to live with. Breeze is our idea of a solution to that problem.</p>
 
-        <h4>Profile Tab</h4>
-        <img class="breeze-pics" src="Images/BreezeProfileTab.png" alt="Breeze Profile Tab">
-        <p>I created the profile tab to serve as the social media aspect of the app. It allows users to link their Instagram, Twitter, and Facebook accounts as well as listing basic information about themselves and their housing preferences (e.g. House or Appartment).</p>
-        <img class="breeze-pics" src="Images/EditProfile.png" alt="Edit Profile Screen">
-        <p>This is our 'Edit Profile' tab which allows the user to edit their information and profile picture.</p>
-        <img class="breeze-pics" src="Images/SettingsScreen.png" alt="Settings Screen">
-        <p>We designed our settings screen to be reminiscent of the standard IOS settings screen in order to be more appleaing and familiar to the end user.</p>
+        <br>
 
-        <h4>Home Tab</h4>
-        <img class="breeze-pics" src="Images/HomeTab.png" alt="Breeze Home Tab">
-        <p>The home tab is meant to serve as the hub for the users current home. They can see a countdown timer to when rent is due, pay rent, view their lease, see their current roomates, and message their landlord. </p>
+        <!-- Code for the slideshow -->
+        <div class="slideshow-group">
 
-        <h4>Messages Tab</h4>
-        <img class="breeze-pics" src="Images/MessagesTab.png" alt="Breeze Messages Tab">
-        <p>Like the settings tab, we decided to go with a style familiar to iphone users. I believe the minimalist design will create a more user friendly experience for the user.</P>
+          <!-- Inidivual slideshow images -->
+          <div class="slide-image">
+            <div class="caption-text">Profile Tab</div>
+            <br>
+            <img class="breeze-pics" src="Images/BreezeProfileTab.png" alt="Breeze Profile Tab">
+          </div>
 
-        <h4>Map Tab</h4>
-        <img class="breeze-pics" src="Images/MapTab.png" alt="Breeze Map Tab">
-        <p>The map tab is the last tab we began building in Breeze. Right now it is only an interactive map with no search or filtering features, but it is my vision to add these in the near future.</p>
+          <div class="slide-image">
+            <div class="caption-text">Edit Profile Screen</div>
+            <br>
+            <img class="breeze-pics" src="Images/EditProfile.png" alt="Edit Profile Screen">
+          </div>
+
+          <div class="slide-image">
+            <div class="caption-text">Settings Screen</div>
+            <br>
+            <img class="breeze-pics" src="Images/SettingsScreen.png" alt="Settings Screen">
+          </div>
+
+          <div class="slide-image">
+            <div class="caption-text">Home Tab</div>
+            <br>
+            <img class="breeze-pics" src="Images/HomeTab.png" alt="Breeze Home Tab">
+          </div>
+
+          <div class="slide-image">
+            <div class="caption-text">Messages Tab</div>
+            <br>
+            <img class="breeze-pics" src="Images/MessagesTab.png" alt="Breeze Messages Tab">
+          </div>
+
+          <div class="slide-image">
+            <div class="caption-text">Map Tab</div>
+            <br>
+            <img class="breeze-pics" src="Images/MapTab.png" alt="Breeze Map Tab">
+          </div>
+
+          <!-- Slide changing arrows -->
+          <a class="next" onclick="showSlide(slideNumber + 1)">&#8250;</a>
+          <a class="prev" onclick="showSlide(slideNumber - 1)">&#8249;</a>
+
+        </div>
+
+        <!-- Slideshow dots -->
+        <div style="text-align: center">
+          <span class="dot" onclick="showSlide(1)"></span>
+          <span class="dot" onclick="showSlide(2)"></span>
+          <span class="dot" onclick="showSlide(3)"></span>
+          <span class="dot" onclick="showSlide(4)"></span>
+          <span class="dot" onclick="showSlide(5)"></span>
+          <span class="dot" onclick="showSlide(6)"></span>
+        </div>
+
+        <br>
+
+        <div class="detailed-caption">I created the profile tab to serve as the social media aspect of the app. It allows users to link their Instagram, Twitter, and Facebook accounts as well as listing basic information about themselves and their housing preferences (e.g. House or Appartment).</div>
+        <div class="detailed-caption">This is our 'Edit Profile' tab which allows the user to edit their information and profile picture.</div>
+        <div class="detailed-caption">We designed our settings screen to be reminiscent of the standard IOS settings screen in order to be more appleaing and familiar to the end user.</div>
+        <div class="detailed-caption">The home tab is meant to serve as the hub for the users current home. They can see a countdown timer to when rent is due, pay rent, view their lease, see their current roomates, and message their landlord.</div>
+        <div class="detailed-caption">Like the settings tab, we decided to go with a style familiar to iphone users. I believe the minimalist design will create a more user friendly experience for the user.</div>
+        <div class="detailed-caption">The map tab is the last tab we began building in Breeze. Right now it is only an interactive map with no search or filtering features, but it is my vision to add these in the near future.</div>
 
       </section>
     </section>
